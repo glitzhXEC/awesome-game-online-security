@@ -77,7 +77,7 @@ Manual installation: copy each wanted folder from `skills/` (including `security
 - **`service-abuse-resilience`** — Reduce denial-of-service and resource exhaustion risks in game services.
 - **`respawn-lifecycle-security`** — Secure death, respawn, invulnerability and player lifecycle state.
 
-`security-router` selects relevant skills by task and topology; it only routes when the agent loads it. Ask for it explicitly if needed. Nine engine-specific guides cover Bevy, Godot, LÖVE, Phaser, pygame, Roblox, Unity, Unreal and the browser; other engines use the cross-engine skills and their own version-matched documentation. The companion tutorials are in `docs/`: MITM/packet-edit attacks, protocol hardening, client tamper, the engine coverage matrix, and a worked live browser (CDP) review of a real multiplayer browser game.
+`security-router` selects relevant skills by task and topology; it only routes when the agent loads it. Ask for it explicitly if needed. Nine engine-specific guides cover Bevy, Godot, LÖVE, Phaser, pygame, Roblox, Unity, Unreal and the browser; other engines use the cross-engine skills and their own version-matched documentation. The companion tutorials are in `docs/`: MITM/packet-edit attacks, protocol hardening, client tamper, the engine coverage matrix, a worked live browser (CDP) review of a real multiplayer browser game, an authenticated browse-based live review method (`docs/BROWSE-LIVE-REVIEW.md`) that drives the reviewer's own logged-in browser, and its worked findings on a real live game (`docs/BROWSE-FINDINGS-2026-11-08.md`).
 
 ## Safety and limitations
 

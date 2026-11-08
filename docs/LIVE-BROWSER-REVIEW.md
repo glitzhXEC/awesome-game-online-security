@@ -98,6 +98,12 @@ the server never authorized" surface.
 - Deliver as "requirements to verify server-side", not as verified hardening.
   Pair with `security-audit-workflow` and `docs/MITM-PACKET-ATTACKS.md` once
   the server side is in scope.
+- The copied-profile live wire pass does not itself reach an authenticated
+  session: on the Edge 157 profile copy, the throwaway profile sends no
+  `Cookie: lumi_token=`, and Edge purges the token row from the copied cookie
+  DB. The authenticated view of the same wire is reviewed with the `browse`
+  method that drives the real logged-in browser, see
+  `docs/BROWSE-LIVE-REVIEW.md`.
 
 ## 6. Reproducing and taking it further
 
